@@ -1,0 +1,84 @@
+{
+  "name": "lcc-react-frontend",
+  "version": "0.1.0",
+  "description": "The Frontend for the LCC website",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.1",
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-brands-svg-icons": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@hcaptcha/react-hcaptcha": "^1.4.4",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.2.3",
+    "bootstrap": "^5.2.2",
+    "eslint": "^8.25.0",
+    "eslint-config-next": "^13.1.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "firebase": "^9.14.0",
+    "firebase-admin": "^11.5.0",
+    "fontawesome": "^5.6.3",
+    "gray-matter": "^4.0.3",
+    "helmet": "^6.0.1",
+    "iframe-resizer-react": "^1.1.0",
+    "markdown-it": "^13.0.1",
+    "next": "^12.3.4",
+    "nextjs": "^0.0.3",
+    "nvm": "^0.0.4",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-bootstrap-icons": "^1.10.2",
+    "react-dom": "^18.2.0",
+    "react-ga4": "^2.0.0",
+    "react-hotjar": "^5.4.1",
+    "react-router-dom": "^6.4.2",
+    "run-script-os": "^1.1.6",
+    "sass": "^1.55.0",
+    "swr": "^2.0.3",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "test": "echo ''",
+    "start": "next start",
+    "format": "prettier --write '**/*.js'",
+    "format-check": "prettier --check '**/*.js'",
+    "ci-check": "run-script-os",
+    "ci-check:darwin:linux": "bash scripts/test.sh",
+    "ci-check:win32": "powershell scripts/test.ps1"
+  },
+  "keywords": [
+    "React",
+    "LCC"
+  ],
+  "author": "LCC Tech",
+  "license": "ISC",
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "prettier": "2.7.1"
+  }
+}

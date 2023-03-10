@@ -1,0 +1,87 @@
+.main {
+    overflow-x: hidden;
+}
+
+.hero {
+
+    .large {
+        width: 100vw;
+        height: 45vw;
+        position: relative;
+
+        .info {
+            padding: 1.5em;
+            margin-top: 2em;
+
+            .cta_wrapper {
+                display: flex;
+                padding: 0.7em;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                background-color: rgba(100,100,100,0.3);
+                color:white;
+                border-radius: 0.5em;
+            .headline {
+                margin: 0.5rem;
+                padding-bottom: 0.5em;
+                font-size: 3.3em;
+                font-weight: 500;
+                line-height: 90%;
+                font-family: 'Quattrocento Sans', sans-serif !important;
+            }   
+            .text {
+                font-size: 1.2em;
+                font-weight: 200;
+                color: white
+            }}
+        }
+    }
+
+    .small {
+        width: 100vw;
+        height: 60vw;
+        position: relative;
+
+        .info {
+            padding: 1.5em;
+            margin-top: 2em;
+
+            .cta_wrapper {
+                display: flex;
+                padding: 0.7em;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                background-color: rgba(100,100,100,0.3);
+                color:white;
+                border-radius: 0.5em;
+            .headline {
+                margin: 0.5rem;
+                padding-bottom: 0.5em;
+                font-size: calc(2em + 1vw);
+                font-weight: 500;
+                line-height: 90%;
+                font-family: 'Quattrocento Sans', sans-serif !important; 
+            }
+            .text {
+                font-size: 1.2em;
+                font-weight: 200;
+                color: white
+            }}
+        }
+    }
+
+}
+.ctacard {
+    border: 1px black solid;
+    border-radius: 1em;
+    padding: 1em;
+    margin-top: 1em;  
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &[bg|="purple"] {background-color: #3e5727;}
+    &[bg|="white"] {background-color: #FFFFFF;}
+}

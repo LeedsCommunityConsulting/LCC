@@ -1,0 +1,100 @@
+
+
+.frontnav {
+	z-index: 1;
+	list-style-type: none;
+	margin-top: 0;
+	top: 0px;
+	overflow: visible;
+	background-color: #3D42A4;
+	padding-bottom: 10px;
+}
+
+.logo {
+	position: relative;
+ width: 66px;
+ height:66px;
+ background: #DDDDDD;
+ border-radius: 50%;
+ margin: 2px;
+ transition: all 0.3s ease;
+}
+
+.logo:hover{
+	width: 70px;
+	height:70px;
+	margin: 0px;
+}
+
+
+
+.navlink {
+	position: relative;
+	text-decoration: none;
+	display: block;
+	color: white !important;
+	font-size:large;
+	text-align: center;
+	padding: 8px 8px;
+	overflow: hidden;
+	white-space: nowrap;
+	height: 3rem;
+	border-width: 0; 
+	transition: border 1s linear;
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-weight:normal;
+	font-style:normal;
+}
+
+.navlinkActive {
+	position: relative;
+	display: block;
+	color: #DDDDDD !important;
+	text-decoration: none;
+	font-size:large;
+	text-align: center;
+	padding: 8px 8px;
+	overflow: hidden;
+	white-space: nowrap;
+	height: 3rem;
+	border-width: 0; 
+	transition: border 1s linear;
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-weight:normal;
+	font-style:normal;
+}
+
+
+.navlink:hover {
+	color: #DDDDDD !important;
+	text-decoration: none;
+}
+
+.navlink::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 2px;
+	background-color: white;
+	transition: all 0.5s ease;
+	transform: scale(0);
+}
+
+.navlink:hover::before
+{
+	transform: scale(1);
+	background-color: #DDDDDD;
+}
+
+
+.navlinkActive::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 2px;
+	background-color: #DDDDDD;
+}
